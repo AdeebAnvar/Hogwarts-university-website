@@ -1,0 +1,220 @@
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+/************************* body *************************/
+@font-face {
+    font-family: "CustomFont";
+    /* Custom name for the font */
+    src: url("assets/fonts/Abhaya Libre.ttf") format("truetype");
+    /* Path to the font file */
+    font-weight: normal;
+    /* Adjust as needed (normal, bold, etc.) */
+    font-style: normal;
+    /* Adjust as needed (normal, italic, etc.) */
+}
+@font-face {
+    font-family: "styleFont";
+    /* Custom name for the font */
+    src: url("assets/fonts/Aclonica.ttf") format("truetype");
+    /* Path to the font file */
+    font-weight: normal;
+    /* Adjust as needed (normal, bold, etc.) */
+    font-style: normal;
+    /* Adjust as needed (normal, italic, etc.) */
+}
+
+* {
+    font-family: "CustomFont", sans-serif;
+    box-sizing: border-box;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/************************* LOGO *************************/
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/************************* Nav *************************/
+
+nav {
+  display: flex;
+  /* Use flexbox for layout */
+  justify-content: space-between;
+  /* Space between logo and menu */
+  align-items: center;
+  /* Center items vertically */
+  padding: 0 20px;
+  /* Add some padding on the sides */
+  height: 100px;
+  /* Adjust based on your design */
+}
+
+.nav_ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_ul_li {
+  margin-left: 20px;
+}
+
+.nav_ul_li a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #333;
+  /* Change link color */
+  font-size: 16px;
+  /* Adjust font size */
+  font-weight: 500;
+  /* Adjust font weight */
+}
+.nav_ul_li a:hover {
+  color: #aba944;
+  font-size: 1.2em;
+}
+.nav h1 {
+  font-weight: 700;
+}
+
+/************************* HOME *************************/
+
+.home {
+  background-image: url("assets/vadim-sherbakov-d6ebY-faOO0-unsplash.jpg"); /* Path to your image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  display: flex; /* Use flexbox if you need to center content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  color: white;
+  position: relative;
+}
+
+.caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack content vertically */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Adjust caption content */
+.caption h1 {
+  font-size: 3em; /* Adjust as needed */
+  margin: 0 0 10px;
+}
+
+.caption p {
+  font-size: 1.5em; /* Adjust as needed */
+}
+/************************* ABOUT US *************************/
+
+.image_row {
+    display: flex;
+    justify-content: center; /* Center images in the row */
+    gap: 26px; /* Space between images */
+    margin-bottom: 40px;
+}
+
+.image_row img {
+    width: 40vh;
+    border-radius: 30px;
+    height: 400px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+.image_row img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+.about_us {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about_us h2 {
+    font-size: 30px; /* Set font size with units */
+    margin-bottom: 15px; /* Space below the heading */
+    font-weight: 900;
+}
+
+.about_us p {
+    text-align: justify;
+    margin: 20px 30px;
+    font-weight: 600;
+    font-size: 15px; /* Set a base font size */
+    line-height: 1.5; /* Improve readability */
+}
+
+/************************* CONTACT US *************************/
+.contact_us {
+    margin-top: 30px;
+    background-color: #333;
+    height: 100vh; /* Use 100vh for full viewport height */
+    color: antiquewhite;
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text within the section */
+    padding: 20px; /* Add padding for some space around */
+}
+
+.contact_us h1 {
+    font-size: 60px; /* Heading size */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.contact_us p {
+    font-family: "styleFont"; /* Ensure this font is loaded */
+    font-size: 16px; /* Adjusted for better readability */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+/* Optional: Form styling if included */
+.contact_us form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center align the form */
+    margin-top: 20px; /* Space above the form */
+}
+
+.contact_us input, .contact_us textarea {
+    width: 90vh; /* Adjust width as needed */
+
+    margin: 10px 0; /* Space between inputs */
+    padding: 10px; /* Padding for inputs */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.contact_us button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #556970; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.contact_us button:hover {
+    background-color: #ABA944; /* Darker shade on hover */
+}
